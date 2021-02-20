@@ -1,0 +1,50 @@
+#+TITLE: OpenGL Test
+#+AUTHOR: Riyyi
+#+LANGUAGE: en
+#+OPTIONS: toc:nil
+
+OpenGL Test.
+
+* Download
+
+** Clone
+
+#+BEGIN_SRC shell-script
+$ git clone "https://<git>.com/riyyi/opengl-test"
+$ cd opengl-test
+$ git submodule init
+$ git submodule update
+#+END_SRC
+
+** Update
+
+#+BEGIN_SRC shell-script
+$ git pull
+$ git submodule update --recursive
+#+END_SRC
+
+* Build instructions
+
+#+BEGIN_SRC shell-script
+$ mkdir build
+$ cd build
+$ cmake .. && make
+#+END_SRC
+
+* Controls
+
+| Button     | Action         |
+|------------+----------------|
+| WASD       | Move around    |
+| Space      | Move upwards   |
+| Left Shift | Move downwards |
+| Mouse      | Look around    |
+| Escape     | Quit           |
+
+* Libraries
+
+- [[https://github.com/aseprite/freetype2][FreeType2]]
+- [[https://github.com/Dav1dde/glad][glad]]
+- [[https://github.com/glfw/glfw][GLFW]]
+- [[https://github.com/g-truc/glm][GLM]]
+- [[https://github.com/nothings/stb][stb]]
